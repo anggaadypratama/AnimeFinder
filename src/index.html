@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Finder</title>
+
+</head>
+
+<body class="bg-neumorphism">
+  <header>
+    <nav class="navbar navbar-light bg-neumorphism">
+      <span class="navbar-brand mb-0 h1 mx-auto"><b> Anime Finder</b></span>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-12 col-lg-9">
+          <section class="position-relative">
+            <div id="outImg" class="box position-absolute"></div>
+            <div class="form-input position-relative d-flex flex-wrap">
+              <input type="file" name="uploadfile" accept="image/*" id="img" style="display: none;" />
+              <label for="img" class="input-img">Upload Gambar</label>
+              <input class="ml-3 input-text" id="inputText" placeholder="Url Gambar" type="text" name="" />
+              <button class="ml-0 mt-2 ml-lg-3 mt-lg-0 tombol">
+                Cari
+              </button>
+            </div>
+          </section>
+        </div>
+        <div id="listEl" class="margin col-12 col-lg-3">
+          <div hidden id="spinner" class="overlay"></div>
+          <anime-list class=" mb-5""></anime-list>
+
+        </div>
+      </div>
+    </main>
+
+    <script src=" index.js"></script>
+            
+</body>
+
+</html>

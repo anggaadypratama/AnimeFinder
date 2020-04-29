@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Viga|Rubik|Roboto|Rubik+Mono+One&display=swap");
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$elg: 1200px;
+
+$whitening: #f1f3f7;
+$WarnaKe1: #e2e8f1;
+$WarnaKe2: #3e70f4;
+$font: #a8aeb7;
+$font2: #305874;
+
+$poppin: "Poppins", sans-serif;
+$rubik: "Rubik", sans-serif;
+$viga: "Viga", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.margin {
+  margin-top: -170px;
+
+  @media only screen and (min-width: $lg) {
+    margin-top: 0;
+  }
+}
+
+* {
+  font-family: $roboto;
+}
+
+.bg-neumorphism {
+  background-color: $whitening;
+}
+
+.bg-blueR {
+  background-color: $WarnaKe2 !important;
+  color: white;
+}
+
+section {
+  width: 100%;
+  height: 90vh;
+
+  .box {
+    height: 230px;
+    width: 100%;
+    background: $whitening;
+    box-shadow: 9px 9px 13px $WarnaKe1, -9px -9px 13px #ffffff;
+    border-radius: 20px;
+    background-size: cover;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -100%);
+    -webkit-transform: translate(-50%, -100%);
+    -moz-transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
+    -o-transform: translate(-50%, -100%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    @media only screen and(min-width: $md) {
+      height: 300px;
+      top: 50%;
+      width: 80%;
+      transform: translate(-50%, -90%);
+      -webkit-transform: translate(-50%, -90%);
+      -moz-transform: translate(-50%, -90%);
+      -ms-transform: translate(-50%, -90%);
+      -o-transform: translate(-50%, -90%);
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+
+    @media only screen and (min-width: $lg) {
+      height: 350px;
+      top: 50%;
+      width: 75%;
+      transform: translate(-50%, -70%);
+      -webkit-transform: translate(-50%, -70%);
+      -moz-transform: translate(-50%, -70%);
+      -ms-transform: translate(-50%, -70%);
+      -o-transform: translate(-50%, -70%);
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+  }
+
+  .form-input {
+    left: 1%;
+    top: 50%;
+
+    @media only screen and (min-width: $md) {
+      top: 60%;
+      left: 10%;
+    }
+
+    @media only screen and (min-width: $lg) {
+      top: 73%;
+      left: 13%;
+    }
+
+    .input-img {
+      text-align: center;
+      padding: 8px 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      color: $font2;
+      background: $whitening;
+      box-shadow: 3px 3px 6px $WarnaKe1, -3px -3px 6px #ffffff;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      flex-basis: 30%;
+
+      @media only screen and (min-width: $md) {
+        flex-basis: 20%;
+      }
+
+      @media only screen and (min-width: $lg) {
+        flex-basis: 20%;
+      }
+
+      @media only screen and (min-width: $elg) {
+        flex-basis: 17%;
+      }
+
+      &:active {
+        box-shadow: inset 3px 3px 6px $WarnaKe1, inset -3px -3px 6px #ffffff;
+        font-weight: bold;
+      }
+    }
+
+    .input-text {
+      width: 40%;
+      padding: 9px 10px;
+      height: 80%;
+      border-radius: 5px;
+      color: $font;
+      background: $whitening;
+      border: 0;
+      box-shadow: inset 4px 4px 8px #d3d4d5, inset -4px -4px 8px #ffffff;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      outline: 0;
+      flex-basis: 65.5%;
+
+      @media only screen and (min-width: $md) {
+        flex-basis: 58%;
+      }
+
+      @media only screen and (min-width: $lg) {
+        flex-basis: 40%;
+      }
+
+      @media only screen and (min-width: $elg) {
+        flex-basis: 43%;
+      }
+    }
+
+    .tombol {
+      padding: 0px 10px;
+      border-radius: 5px;
+      padding: 5px;
+      color: $font2;
+      border: 0;
+      outline: 0;
+      background: $whitening;
+      box-shadow: 3px 3px 6px $WarnaKe1, -3px -3px 6px #ffffff;
+      flex-basis: 98%;
+
+      @media only screen and (min-width: $md) {
+        flex-basis: 80%;
+      }
+
+      @media only screen and (min-width: $lg) {
+        flex-basis: 10%;
+      }
+
+      @media only screen and (min-width: $elg) {
+        flex-basis: 10%;
+      }
+
+      &:active {
+        box-shadow: inset 3px 3px 6px $WarnaKe1, inset -3px -3px 6px #ffffff;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+anime-list {
+  width: 100%;
+  top: 0;
+  margin-top: 50px;
+  position: absolute;
+  height: 70vh;
+  overflow: hidden;
+  padding: 5px;
+
+  &:hover {
+    overflow: auto;
+  }
+
+  @media only screen and (min-width: $lg) {
+    top: 17%;
+    margin-top: 0;
+  }
+}
+
+.card {
+  border-radius: 10px !important;
+  width: 95%;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+
+  h6 {
+    a {
+      color: white;
+      font-weight: bold;
+      text-transform: capitalize;
+      text-align: justify;
+      transition: 0.2;
+      -webkit-transition: 0.2;
+      -moz-transition: 0.2;
+      -ms-transition: 0.2;
+      -o-transition: 0.2;
+
+      &:hover {
+        text-decoration: none;
+        color: $WarnaKe1;
+      }
+    }
+  }
+
+  p {
+    line-height: 20px;
+  }
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+  .mini-box {
+    border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    height: 100%;
+    width: 100%;
+    background: black;
+    background-size: cover;
+    -webkit-box-shadow: 10px 0px 19px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 10px 0px 19px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 10px 0px 19px 0px rgba(0, 0, 0, 0.21);
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+
+    @media only screen and(min-width: $lg) {
+      height: 150px;
+      -webkit-box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.21);
+      -moz-box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.21);
+      box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.21);
+      border-radius: 10px 10px 0px 0px;
+      -moz-border-radius: 10px 10px 0px 0px;
+      -webkit-border-radius: 10px 10px 0px 0px;
+      -ms-border-radius: 10px 10px 0px 0px;
+      -o-border-radius: 10px 10px 0px 0px;
+    }
+  }
+
+  .info {
+    @media only screen and (min-width: $lg) {
+      margin: 0px 0px 20px;
+    }
+  }
+}
+
+.hapus {
+  width: 100%;
+  position: absolute;
+  padding: 5px;
+  top: 0;
+  background: $whitening;
+  box-shadow: 3px 3px 6px $WarnaKe1, -3px -3px 6px #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  color: $font2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 0;
+  outline: 0 !important;
+
+  &:active {
+    box-shadow: inset 3px 3px 6px $WarnaKe1, inset -3px -3px 6px #ffffff;
+    font-weight: bold;
+  }
+
+  @media only screen and (min-width: $lg) {
+    top: 8%;
+  }
+}
+
+#spinner:not([hidden]) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color: $whitening, $alpha: 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#spinner::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 3px solid #f3f3f3;
+  border-top: 5px solid $WarnaKe2;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#overlay {
+  position: fixed;
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+}
